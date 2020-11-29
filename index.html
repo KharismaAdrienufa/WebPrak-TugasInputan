@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan</title>
+    <style>
+        body {
+            background-color: teal;
+        }
+
+        form {
+            margin-top: 100px;
+            color: turquoise;
+        }
+
+    </style>
+    <script>
+        alert("Selamat Datang");
+    
+        function result(){
+            angkaA = eval(penjumlahan.numberA.value);
+            angkaB = eval(penjumlahan.numberB.value);
+            total = angkaA + angkaB
+            penjumlahan.hasil.value = total;
+    
+            document.body.style.backgroundColor = "#34eb89";
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <form name="penjumlahan">
+            <label for="numberA">Masukkan Angka A :</label><br><br>
+            <input type="text" name="numberA" onkeypress="return numberA (event)"><br><br>
+            <label for="numberB">Masukkan Angka B :</label><br><br>
+            <input type="text" name="numberB" onkeypress="return numberB (event)"><br><br>
+            <button onclick="result()">Simpan</button><br><br>
+
+            <label for="hasil">Hasil :</label><br><br>
+            <input type="text" value="" name="hasil">
+        </form>
+    </main>
+
+</body>
+</html>
